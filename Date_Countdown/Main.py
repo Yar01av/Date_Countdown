@@ -35,8 +35,6 @@ def string_dates_to_diffs(year_str, month_str, day_str, current_date):
 	event_date = datetime.date(int(year_str), int(month_str), int(day_str))
 	return (event_date - current_date)
 
-#Display the dates
-#currentely, doesn't work...
 for i in range(0, int(len(saved_lines_of_dates)/4)):
 	if len(saved_lines_of_dates) > 1:
 		date_diff = string_dates_to_diffs(saved_lines_of_dates[4*i + 1], saved_lines_of_dates[4*i + 2], saved_lines_of_dates[4*i + 3], current_date)
@@ -71,7 +69,7 @@ while True:
 
 	stop_or_continue = input("If you wish to find out how many days are left before anothere date, enter anything. Otherwise, enter 'c' to close the program.\n")
 	if stop_or_continue == "c":
-		#do something about it (too fragile)...
+		#to be changed (too fragile)...
 		saved_dates.close()
 		break
 
