@@ -80,10 +80,3 @@ while True:
 	stop_or_continue = input("If you wish to find out how many days are left before anothere date, enter anything. Otherwise, enter 'c' to close the program.\n")
 	if stop_or_continue == "c":
 		break
-
-#To be implemented:
-#	- allow closing by force and still saving the dates
-#	- store dates as dictionaries
-#	- converting the number of days to other units
-#	- prevent storing the same data
-#	~ print each word with a small delay
